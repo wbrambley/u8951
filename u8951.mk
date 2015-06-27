@@ -18,17 +18,12 @@ DEVICE_PACKAGE_OVERLAYS += device/huawei/u8951/overlay
 
 # NFC packages
 PRODUCT_PACKAGES += \
-    NfcNci \
-    nfc_nci.pn54x.default \
     Tag \
     libnfc \
     libnfc-nxp \
-    libnfc-nci \
     libnfc_jni \
     com.android.nfc_extras \
     libnfc_ndef \
-    SmartcardService \
-    org.simalliance.openmobileapi \
     com.android.qcom.nfc_extras \
     NfcTests
     
@@ -58,9 +53,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-    frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
-    frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml 
-
+    frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
